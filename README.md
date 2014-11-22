@@ -1,7 +1,7 @@
 # Object.traverse()
 
 ## About
-Traverses the tree (javascript object) recursively and calls function for each node
+Traverses the tree (javascript object) recursively and calls function for each node key
 
 ## Required
 ES5 Object.keys(), Array.prototype.indexOf()
