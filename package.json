@@ -1,0 +1,17 @@
+{
+    "name": "object-traverse",
+    "version": "0.1.0",
+    "homepage": "https://github.com/nervgh/object-traverse",
+    "description": "Traverses the tree (javascript object) recursively and calls function for each node",
+    "author": {
+        "name": "nerv",
+        "url": "https://github.com/nervgh"
+    },
+    "dependencies": {
+        "grunt-contrib-copy": "~0.4.1",
+        "grunt-contrib-clean": "~0.4.0",
+        "grunt-contrib-concat": "~0.3.0",
+        "grunt-contrib-uglify": "~0.2.1",
+        "grunt": "~0.4.1"
+    }
+}
