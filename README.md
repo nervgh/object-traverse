@@ -37,7 +37,7 @@ var object = {
 };
 
 Object.traverse(object, function(node, value, key, path, depth) {
-    console.log(path.join('.'));
+    console.log(path.join('.'), value);
 });
 
 // foo    Object {bar: Object}
@@ -66,7 +66,7 @@ var object = {
 };
 
 Object.traverse(object, function(node, value, key, path, depth) {
-    console.log(path.join('.'));
+    console.log(path.join('.'), value);
 }, null, 1);
 
 // foo    Object {bar: Object}
@@ -106,7 +106,7 @@ var object = {
 object.foo.bar = object;
 
 Object.traverse(object, function(node, value, key, path, depth) {
-    console.log(path.join('.'));
+    console.log(path.join('.'), value);
 });
 
 // foo Object    {bar: Object, number: 1}
@@ -124,7 +124,7 @@ var object = {
 object.foo.bar = object;
 
 Object.traverse(object, function(node, value, key, path, depth) {
-    console.log(path.join('.'));
+    console.log(path.join('.'), value);
 }, null, null, true);
 
 // foo    Object {bar: Object, number: 1}
