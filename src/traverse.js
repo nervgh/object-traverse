@@ -28,6 +28,7 @@
      * @param {Boolean} mode
      * @param {Boolean} ignore
      * @param {Number} max
+     * @returns {Object}
      */
     function walk(object, cb, ctx, mode, ignore, max) {
         var stack = [[], 0, getKeys(object).sort(), object];
@@ -70,6 +71,8 @@
                 }
             }
         } while(stack[0]);
+
+        return object;
     }
     /**
      * Walks object recursively
@@ -79,6 +82,7 @@
      * @param {Number} [mode=0]
      * @param {Boolean} [ignoreCircularReferences=false]
      * @param {Number} [maxDepth=100]
+     * @returns {Object}
      */
     function traverse(object, callback, context, mode, ignoreCircularReferences, maxDepth) {
         var cb = callback;
@@ -87,7 +91,7 @@
         var ignore = !!ignoreCircularReferences;
         var max = isNumber(maxDepth) ? maxDepth : MAX_DEPTH;
 
-        walk(object, cb, ctx, _mode, ignore, max);
+        return walk(object, cb, ctx, _mode, ignore, max);
     }
 
     // export

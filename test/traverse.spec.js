@@ -306,3 +306,13 @@ describe('Max depth', function() {
         expect(stack.length).toEqual(3);
     });
 });
+
+
+
+describe('Object.traverse() returns same object', function() {
+    var object = {};
+
+    it('Return same object', function() {
+        expect(Object.traverse(object, function() {})).toBe(object);
+    });
+});

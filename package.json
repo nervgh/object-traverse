@@ -1,6 +1,6 @@
 {
     "name": "object-traverse",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "homepage": "https://github.com/nervgh/object-traverse",
     "description": "Traverses the tree (javascript object) recursively and calls function for each node",
     "author": {
