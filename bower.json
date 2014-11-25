@@ -4,6 +4,7 @@
     "main": "object-traverse.js",
     "homepage": "https://github.com/nervgh/object-traverse",
     "description": "Traverses the tree (javascript object) recursively and calls function for each node",
+    "license": "MIT",
     "author": {
         "name": "nerv",
         "url": "https://github.com/nervgh"
