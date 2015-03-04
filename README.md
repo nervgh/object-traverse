@@ -1,5 +1,8 @@
 # Object.traverse()
 
+## Deprecated
+See [Recursive Iterator](https://github.com/nervgh/recursive-iterator).
+
 ## About
 Traverses the tree (javascript object) recursively and calls function for each node key
 
